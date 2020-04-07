@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UsA-z2-wgs">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pinecone-Regular.ttf">
+            <string>Pinecone-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Maingame-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="Maingame" customModule="Math" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkK-6z-4AF">
+                                <rect key="frame" x="70.5" y="205" width="179.5" height="70"/>
+                                <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="71"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7iQ-hM-9oj">
+                                <rect key="frame" x="20" y="305" width="280" height="29"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HF7-Fi-xex">
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="29"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="17"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="touch1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ne-wN-EzS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9o-rf-vPj">
+                                        <rect key="frame" x="145" y="0.0" width="135" height="29"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="17"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="b2Touch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mtG-Qr-bCH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5Uc-AU-V0f">
+                                <rect key="frame" x="20" y="364" width="280" height="29"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXh-ri-kgE">
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="29"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="17"/>
+                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal">
+                                            <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="touch3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NKE-tL-U94"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqu-47-pJq">
+                                        <rect key="frame" x="145" y="0.0" width="135" height="29"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="17"/>
+                                        <state key="normal">
+                                            <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="touch4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bmg-kX-L2m"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNF-3a-hu9">
+                                <rect key="frame" x="136.5" y="425.5" width="47" height="29"/>
+                                <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="17"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touch5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7O3-l1-SLg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total: Correct: Wrong:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uu-0N-3lq" userLabel="Total: Correct: Wrong:">
+                                <rect key="frame" x="25" y="50" width="125.5" height="103.5"/>
+                                <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="35"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFy-A7-PGX">
+                                <rect key="frame" x="185.5" y="50" width="84.5" height="37.5"/>
+                                <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="38"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gNF-3a-hu9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4rw-dX-uHQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Uc-AU-V0f" secondAttribute="trailing" constant="20" id="5gm-sO-XsS"/>
+                            <constraint firstItem="HkK-6z-4AF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Bga-7i-bXM"/>
+                            <constraint firstItem="HkK-6z-4AF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CD1-nO-J13"/>
+                            <constraint firstItem="9uu-0N-3lq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="JKU-hs-Sx7"/>
+                            <constraint firstItem="9uu-0N-3lq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="JOB-sv-kpN"/>
+                            <constraint firstItem="7iQ-hM-9oj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Mfs-Da-ffV"/>
+                            <constraint firstItem="gNF-3a-hu9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="200" id="QXq-b3-1ok"/>
+                            <constraint firstItem="NFy-A7-PGX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="dFt-DB-am5"/>
+                            <constraint firstItem="5Uc-AU-V0f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jfW-QV-tvf"/>
+                            <constraint firstItem="5Uc-AU-V0f" firstAttribute="top" secondItem="7iQ-hM-9oj" secondAttribute="bottom" constant="30" id="kXX-Lj-zwA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7iQ-hM-9oj" secondAttribute="trailing" constant="20" id="tTa-LD-Vj4"/>
+                            <constraint firstAttribute="trailing" secondItem="NFy-A7-PGX" secondAttribute="trailing" constant="50" id="uPy-fN-qFh"/>
+                            <constraint firstItem="7iQ-hM-9oj" firstAttribute="top" secondItem="HkK-6z-4AF" secondAttribute="bottom" constant="30" id="x1F-Fh-DIW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7YT-VU-aUJ"/>
+                    <connections>
+                        <outlet property="CountDown" destination="NFy-A7-PGX" id="79y-su-Qp4"/>
+                        <outlet property="affter" destination="gNF-3a-hu9" id="aOg-CT-SUs"/>
+                        <outlet property="b1" destination="HF7-Fi-xex" id="26u-LN-WtB"/>
+                        <outlet property="b2" destination="s9o-rf-vPj" id="hdw-bt-kAM"/>
+                        <outlet property="b3" destination="pXh-ri-kgE" id="kdY-QH-iQc"/>
+                        <outlet property="b4" destination="zqu-47-pJq" id="yX3-2y-op5"/>
+                        <outlet property="mathW" destination="HkK-6z-4AF" id="uaV-MU-Kyj"/>
+                        <outlet property="score" destination="9uu-0N-3lq" id="sZg-gJ-0pB"/>
+                        <segue destination="bnB-id-9V5" kind="show" identifier="outOfTime" id="5lk-Ea-TMP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1728.985507246377" y="-256.47321428571428"/>
+        </scene>
+        <!--Starting-->
+        <scene sceneID="T42-uv-dyw">
+            <objects>
+                <viewController storyboardIdentifier="Starting" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UsA-z2-wgs" customClass="Starting" customModule="Math" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nco-BT-DAY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDq-ra-vlZ">
+                                <rect key="frame" x="73" y="342" width="174" height="64"/>
+                                <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="52"/>
+                                <state key="normal" title="SETUP">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="d8n-mL-Yee" kind="show" id="Cy8-Mx-829"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MENTAL MATH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhm-zx-HQr">
+                                <rect key="frame" x="15.5" y="10" width="289.5" height="40.5"/>
+                                <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="41"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2IF-Gz-51x">
+                                <rect key="frame" x="89" y="178" width="142" height="64"/>
+                                <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="52"/>
+                                <state key="normal" title="PLAY">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="k0k-XZ-aVr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qhm-zx-HQr" firstAttribute="top" secondItem="Ghb-n6-lWl" secondAttribute="top" constant="10" id="1rX-3p-PyT"/>
+                            <constraint firstItem="2IF-Gz-51x" firstAttribute="centerY" secondItem="Nco-BT-DAY" secondAttribute="centerY" constant="-30" id="5D9-e8-hs9"/>
+                            <constraint firstItem="2IF-Gz-51x" firstAttribute="centerX" secondItem="Nco-BT-DAY" secondAttribute="centerX" id="UQ4-ig-cIA"/>
+                            <constraint firstItem="VDq-ra-vlZ" firstAttribute="centerX" secondItem="Nco-BT-DAY" secondAttribute="centerX" id="VIq-2l-twO"/>
+                            <constraint firstItem="VDq-ra-vlZ" firstAttribute="top" secondItem="2IF-Gz-51x" secondAttribute="bottom" constant="100" id="cM5-a2-EpB"/>
+                            <constraint firstItem="Qhm-zx-HQr" firstAttribute="centerX" secondItem="Nco-BT-DAY" secondAttribute="centerX" id="p2R-o8-aYZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ghb-n6-lWl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wvi-z3-a2R"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hnb-tW-Izd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-316.40625" y="-135.3515625"/>
+        </scene>
+        <!--Setup-->
+        <scene sceneID="84g-yK-pU8">
+            <objects>
+                <viewController storyboardIdentifier="Setup" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d8n-mL-Yee" customClass="Setup" customModule="Math" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wxm-ym-GRf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Obo-57-dV1">
+                                <rect key="frame" x="16.5" y="213.5" width="287" height="33"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUq-gG-QbB">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="33"/>
+                                        <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="30"/>
+                                        <state key="normal" title="ADDITION">
+                                            <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="21"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="add:" destination="d8n-mL-Yee" eventType="touchUpInside" id="in0-VP-76S"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEm-sc-UaK">
+                                        <rect key="frame" x="111" y="0.0" width="176" height="33"/>
+                                        <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="30"/>
+                                        <state key="normal" title="MULTIPLICATION">
+                                            <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="21"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="mult:" destination="d8n-mL-Yee" eventType="touchUpInside" id="6xz-B6-6sb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vC2-iS-El0">
+                                <rect key="frame" x="85" y="346.5" width="150" height="64"/>
+                                <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="52"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UsA-z2-wgs" kind="show" id="lcl-gQ-jPj"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="j3C-cT-Jr2">
+                                <rect key="frame" x="32" y="256.5" width="256" height="33"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8y-HG-Gao">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="33"/>
+                                        <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="30"/>
+                                        <state key="normal" title="DIVISION">
+                                            <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="21"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="dev:" destination="d8n-mL-Yee" eventType="touchUpInside" id="xIX-x0-2ur"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Th8-42-ido">
+                                        <rect key="frame" x="103" y="0.0" width="153" height="33"/>
+                                        <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="30"/>
+                                        <state key="normal" title="SUBTRACTION">
+                                            <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="21"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="sub:" destination="d8n-mL-Yee" eventType="touchUpInside" id="pi9-db-bFq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="j3C-cT-Jr2" firstAttribute="centerX" secondItem="wxm-ym-GRf" secondAttribute="centerX" id="5Mt-dk-XH2"/>
+                            <constraint firstItem="vC2-iS-El0" firstAttribute="centerX" secondItem="wxm-ym-GRf" secondAttribute="centerX" id="BX6-Lf-X9P"/>
+                            <constraint firstItem="Obo-57-dV1" firstAttribute="centerY" secondItem="wxm-ym-GRf" secondAttribute="centerY" id="Fc5-Ow-7BR"/>
+                            <constraint firstItem="vC2-iS-El0" firstAttribute="top" secondItem="Obo-57-dV1" secondAttribute="bottom" constant="100" id="M8O-UY-T2F"/>
+                            <constraint firstItem="j3C-cT-Jr2" firstAttribute="top" secondItem="Obo-57-dV1" secondAttribute="bottom" constant="10" id="Nne-Hs-GsG"/>
+                            <constraint firstItem="Obo-57-dV1" firstAttribute="centerX" secondItem="wxm-ym-GRf" secondAttribute="centerX" id="Uii-ks-vEx"/>
+                            <constraint firstItem="Obo-57-dV1" firstAttribute="centerY" secondItem="wxm-ym-GRf" secondAttribute="centerY" id="btC-fy-4tx"/>
+                            <constraint firstItem="Obo-57-dV1" firstAttribute="centerX" secondItem="wxm-ym-GRf" secondAttribute="centerX" id="p5a-mw-d0Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tgc-62-QIW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gGj-xs-rCm"/>
+                    <connections>
+                        <outlet property="ba" destination="pUq-gG-QbB" id="tDF-2O-Jlg"/>
+                        <outlet property="bd" destination="T8y-HG-Gao" id="38X-RB-LJL"/>
+                        <outlet property="bm" destination="yEm-sc-UaK" id="61K-ey-L40"/>
+                        <outlet property="bs" destination="Th8-42-ido" id="IBu-zJ-KSU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F5P-mR-euO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-191.30434782608697" y="-1197.3214285714284"/>
+        </scene>
+        <!--Game Over-->
+        <scene sceneID="D8U-uF-9KM">
+            <objects>
+                <viewController storyboardIdentifier="gameOver" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bnB-id-9V5" customClass="gameOver" customModule="Math" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qS1-LD-EQp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCH-4p-VfL">
+                                <rect key="frame" x="19" y="72" width="282" height="64"/>
+                                <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="52"/>
+                                <state key="normal" title="MAIN MENU">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UsA-z2-wgs" kind="show" id="GD5-0b-e6x"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NfH-al-Ihs">
+                                <rect key="frame" x="-63.5" y="146" width="447" height="188"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idX-Iw-kv4">
+                                        <rect key="frame" x="0.0" y="0.0" width="447" height="50"/>
+                                        <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="29"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHf-dd-RJQ">
+                                        <rect key="frame" x="0.0" y="60" width="447" height="50"/>
+                                        <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="29"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MULTIPLICATION 0/0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSQ-kl-Q3p">
+                                        <rect key="frame" x="0.0" y="120" width="447" height="29"/>
+                                        <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="29"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEVISION 0/0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyL-lK-P2d">
+                                        <rect key="frame" x="0.0" y="159" width="447" height="29"/>
+                                        <fontDescription key="fontDescription" name="Pinecone-Regular" family="Pinecone" pointSize="29"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sCH-4p-VfL" firstAttribute="centerX" secondItem="qS1-LD-EQp" secondAttribute="centerX" id="ROr-D3-JZz"/>
+                            <constraint firstItem="NfH-al-Ihs" firstAttribute="centerY" secondItem="qS1-LD-EQp" secondAttribute="centerY" id="aG4-8k-Fdk"/>
+                            <constraint firstItem="NfH-al-Ihs" firstAttribute="top" secondItem="sCH-4p-VfL" secondAttribute="bottom" constant="10" id="eIm-2Q-d8z"/>
+                            <constraint firstItem="NfH-al-Ihs" firstAttribute="centerX" secondItem="qS1-LD-EQp" secondAttribute="centerX" id="l5I-xG-JAg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pq7-1D-yI3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MDb-Ao-lHl"/>
+                    <connections>
+                        <outlet property="a" destination="idX-Iw-kv4" id="Tkt-5f-F3T"/>
+                        <outlet property="d" destination="tyL-lK-P2d" id="h7i-5s-TMx"/>
+                        <outlet property="m" destination="wSQ-kl-Q3p" id="BiS-Pn-JaQ"/>
+                        <outlet property="s" destination="CHf-dd-RJQ" id="GeZ-2v-9xu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZ6-jJ-qK3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644.92753623188412" y="-30.133928571428569"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="GD5-0b-e6x"/>
+    </inferredMetricsTieBreakers>
+</document>
